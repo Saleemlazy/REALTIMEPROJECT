@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh 'cd Application && docker build -t memrlazy/dockerpractice/japp:v1 .'
                 sh 'docker login -u memrlazy -p mrlazy@123'
-                sh 'docker push memrlazy/japp:v1'
+                sh 'docker push memrlazy/dockerpractice/japp:v1'
             }
         }
     }
